@@ -1,4 +1,4 @@
-//Slow Exponentiation(Naive Approach)
+//Slow Exponentiation(Naive Approach) O(b)
 #include<iostream>
 using namespace std;
 

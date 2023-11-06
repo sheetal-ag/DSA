@@ -8,7 +8,7 @@ void printArray(int arr[], int size) {
   }
   cout << endl;
 }
-/* ******Linear search***** *\
+//******Linear search***** 
 //present -> true;
 //absent -> false;
 
@@ -76,4 +76,49 @@ int findMinimumInArray(int arr[], int size) {
 
 
 //REVERSE AN ARRAY
+void reverseArray(int arr[], int size) {
+  
+
+  //using for loop:
+  //for(int left =0, right=size-1; left<=right; left++, right--) {
+  //  swap(arr[left], arr[right]);
+  // }
+  
+  int left = 0;
+  int right = size - 1;
+  while(left <= right) {
+    swap(arr[left], arr[right]);
+    left++;
+    right--;
+  }
+
+  //printing the array;
+  for(int i=0; i<size; i++) {
+    cout << arr[i] << " "; 
+  }
+  
+}
+
+
+
+//EXTREME PRINT IN AN ARRAY
+
+void extremePrint(int arr[], int size) {
+  int left = 0;
+  int right = size - 1;
+
+  while(left <= right) {
+    if(left == right) {
+      cout << arr[left] << endl;  
+    }
+    else {
+      cout << arr[left] << endl;
+      cout << arr[right] << endl;
+    }
+    
+    left++;
+    right--;
+  }
+  
+}
 

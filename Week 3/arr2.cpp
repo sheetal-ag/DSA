@@ -68,6 +68,8 @@ void shiftArray(int arr[], int n) {
   arr[0] = temp;
 }
 
+//for left shift: arr[i]=arr[i+1]
+
 int main(){
    int arr[] = {2,10,11,10,2,13,15,13,15};
    int n = 9;

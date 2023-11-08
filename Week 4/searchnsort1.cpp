@@ -31,10 +31,11 @@ int binarySearch(int arr[], int n, int target) {
 int findFirstOccurence(int arr[], int n, int target) {
   int s = 0;
   int e = n-1;
-  int mid = (s+e)/2;
+  int mid = (s+e)/2;//integer overflow might happen
 
-  //BEST Practice
+  //BEST Practice to fix integer overflow
   //int mid = s +(e-s)/2;
+  //int mid = s/2 + e/2;
   
   int ans = -1;
 
